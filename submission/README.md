@@ -31,14 +31,28 @@ Proyek ini merupakan analisis data komprehensif pada dataset E-Commerce publik. 
 └── README.md
 ```
 
-## Setup Environment - Anaconda
+## Setup Environment & Instalasi
+Pastikan Anda telah menginstal Python di komputer Anda. Disarankan menggunakan virtual environment (Conda atau venv).
+
+## Menggunakan pip:
+### Clone repositori
+```
+git clone <URL_REPOSITORI_ANDA>
+cd <NAMA_FOLDER_REPOSITORI>
+```
+
+### Membuat virtual environment
+```
+python -m venv venv
+```
+### Setup Environment - Anaconda
 ```
 conda create --name main-ds python=3.9
 conda activate main-ds
 pip install -r requirements.txt
 ```
 
-## Setup Environment - Shell/Terminal
+### Setup Environment - Shell/Terminal
 ```
 mkdir proyek_analisis_data
 cd proyek_analisis_data
@@ -47,7 +61,33 @@ pipenv shell
 pip install -r requirements.txt
 ```
 
-## Run steamlit app
+## Aktivasi virtual environment
+### Windows:
 ```
-streamlit run dashboard.py
+venv\Scripts\activate
 ```
+### macOS/Linux:
+```
+source venv/bin/activate
+```
+
+
+## Cara Menjalankan Dashboard
+Setelah semua dependensi terinstal, jalankan perintah berikut di terminal untuk membuka dashboard Streamlit:
+
+### Run steamlit app
+```
+streamlit run dashboard/dashboard.py
+```
+
+Aplikasi akan secara otomatis terbuka di browser web default Anda pada http://localhost:8501
+
+
+## Rangkuman Tujuan Proyek
+
+* **Tujuan/Masalah:** Menganalisis perilaku pembayaran dan performa penjualan dari data mentah e-commerce yang tersebar di berbagai tabel terpisah untuk menemukan *insight* bisnis.
+* **Solusi & Implementasi Teknis (Action):** * Membangun *pipeline* pemrosesan data menggunakan Python dan Pandas untuk mengekstrak dan menggabungkan (`merge`) 4 tabel dataset yang berbeda menjadi satu *dataframe* terpusat.
+    * Melakukan *data cleansing* terstruktur (mengisi nilai null pada translasi kategori dan menormalisasi *missing values*).
+    * Menghitung agregasi metrik bisnis (distribusi pembayaran dan volume transaksi per kategori).
+    * Mengembangkan *dashboard* interaktif *end-to-end* menggunakan Streamlit untuk memvisualisasikan insight bisnis secara dinamis.
+* **Hasil (Impact):** Menghasilkan *dashboard* operasional yang memungkinkan pengguna untuk memfilter data berdasarkan kategori produk dan metode pembayaran, memberikan visibilitas langsung terhadap 5 kategori produk penyumbang transaksi terbesar.
