@@ -29,6 +29,7 @@ Proyek ini merupakan analisis data komprehensif pada dataset E-Commerce publik. 
 ├── Proyek_Analisis_Data E-Commerce Dataset V2.ipynb
 ├── requirements.txt
 └── README.md
+```
 
 ## Setup Environment - Anaconda
 ```
