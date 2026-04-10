@@ -37,8 +37,8 @@ Pastikan Anda telah menginstal Python di komputer Anda. Disarankan menggunakan v
 ## Menggunakan pip:
 ### Clone repositori
 ```
-git clone <URL_REPOSITORI_ANDA>
-cd <NAMA_FOLDER_REPOSITORI>
+git clone https://github.com/IchiroMitsuki/proyek_Analisis_Data_dicodingidcourse
+cd proyek_Analisis_Data_dicodingidcourse
 ```
 
 ### Membuat virtual environment
