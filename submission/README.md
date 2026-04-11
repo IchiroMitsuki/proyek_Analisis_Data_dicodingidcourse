@@ -86,7 +86,8 @@ Aplikasi akan secara otomatis terbuka di browser web default Anda pada http://lo
 ## Rangkuman Tujuan Proyek
 
 * **Tujuan/Masalah:** Menganalisis perilaku pembayaran dan performa penjualan dari data mentah e-commerce yang tersebar di berbagai tabel terpisah untuk menemukan *insight* bisnis.
-* **Solusi & Implementasi Teknis (Action):** * Membangun *pipeline* pemrosesan data menggunakan Python dan Pandas untuk mengekstrak dan menggabungkan (`merge`) 4 tabel dataset yang berbeda menjadi satu *dataframe* terpusat.
+* **Solusi & Implementasi Teknis (Action):**
+    * Membangun *pipeline* pemrosesan data menggunakan Python dan Pandas untuk mengekstrak dan menggabungkan (`merge`) 4 tabel dataset yang berbeda menjadi satu *dataframe* terpusat.
     * Melakukan *data cleansing* terstruktur (mengisi nilai null pada translasi kategori dan menormalisasi *missing values*).
     * Menghitung agregasi metrik bisnis (distribusi pembayaran dan volume transaksi per kategori).
     * Mengembangkan *dashboard* interaktif *end-to-end* menggunakan Streamlit untuk memvisualisasikan insight bisnis secara dinamis.
